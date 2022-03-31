@@ -9,7 +9,7 @@ server.get("/", (request, response) => {   // '/' é a rota
 });
 
 server.get("/outro/", (request, response) => {   // '/outro/' é a rota 
-    console.log("hello web");
+    console.log("primeiro exercicio");
 
     response.send("<h1>meu site lindo</h1>");
 });
