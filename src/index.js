@@ -2,13 +2,14 @@ import express from 'express';
 /* import productRouter from "./routes/products.js";
 import streamRouter from "./routes/stream.js";
 import canalRouter from "./routes/canal.js"; */
-import { productRouter, streamRouter, canalRouter } from './routes/index.js';
-import { PORT } from './constants.js';
+import { streamRouter, canalRouter } from '../../projetinho/src/routes/index.js';
+import { PORT } from '../../projetinho/src/constants.js';
+import "./database/index.js"
+
 
 const server = express();
 
 server.use(express.json());
-server.use('/products/', productRouter);
 server.use('/stream/', streamRouter);
 server.use('/canal/', canalRouter);
 
